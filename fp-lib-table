@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name 7segment_counter)(type KiCad)(uri ${KIPRJMOD}/7segment_counter.pretty)(options "")(descr ""))
+)
