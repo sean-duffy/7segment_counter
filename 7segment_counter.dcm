@@ -1,3 +1,13 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 2462
+D KEYSTONE - 2462 - BATTERY HOLDER
+F http://www.keyelco.com/product-pdf.cfm?p=1027
+$ENDCMP
+#
+$CMP CD4026BE
+D CD4026BE, 5-stage Decade Counter/Divider, Decade, Up Counter, 3  18 V, 16-Pin PDIP
+F http://www.ti.com/lit/ds/symlink/cd4026b.pdf
+$ENDCMP
+#
 #End Doc Library
