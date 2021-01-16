@@ -59,17 +59,6 @@ F 3 "~" H 7700 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW2
-U 1 1 5FE142DD
-P 7700 3950
-F 0 "SW2" V 7654 4098 50  0000 L CNN
-F 1 "SW_Count" V 7745 4098 50  0000 L CNN
-F 2 "7segment_counter:MJTP1212" H 7700 4150 50  0001 C CNN
-F 3 "" H 7700 4150 50  0001 C CNN
-	1    7700 3950
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:CP1 C2
 U 1 1 5FE1449A
 P 10500 3650
@@ -101,17 +90,6 @@ F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6580 3800
 F 3 "~" H 6650 3800 50  0001 C CNN
 	1    6650 3800
 	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW1
-U 1 1 5FE1482D
-P 6650 2750
-F 0 "SW1" V 6604 2898 50  0000 L CNN
-F 1 "SW_Reset" V 6695 2898 50  0000 L CNN
-F 2 "7segment_counter:MJTP1212" H 6650 2950 50  0001 C CNN
-F 3 "" H 6650 2950 50  0001 C CNN
-	1    6650 2750
-	0    1    1    0   
 $EndComp
 $Comp
 L 7segment_counter:CD4026BE IC1
@@ -249,7 +227,6 @@ Wire Wire Line
 	6650 3350 6300 3350
 Wire Wire Line
 	6650 3350 6650 3650
-Connection ~ 6650 3350
 Wire Wire Line
 	3000 3450 2750 3450
 Wire Wire Line
@@ -586,4 +563,27 @@ Wire Wire Line
 	2700 3650 3000 3650
 Wire Wire Line
 	2700 3650 2700 6050
+$Comp
+L Switch:SW_Push_Dual SW_RESET1
+U 1 1 6003AE9A
+P 6850 2750
+F 0 "SW_RESET1" V 6804 2898 50  0000 L CNN
+F 1 "SW_Push_Dual" V 6895 2898 50  0000 L CNN
+F 2 "7segment_counter:MJTP1212" H 6850 2950 50  0001 C CNN
+F 3 "" H 6850 2950 50  0001 C CNN
+	1    6850 2750
+	0    1    1    0   
+$EndComp
+Connection ~ 6650 3350
+$Comp
+L Switch:SW_Push_Dual SW_COUNT1
+U 1 1 60056F74
+P 7700 3950
+F 0 "SW_COUNT1" V 7654 4098 50  0000 L CNN
+F 1 "SW_Push_Dual" V 7745 4098 50  0000 L CNN
+F 2 "7segment_counter:MJTP1212" H 7700 4150 50  0001 C CNN
+F 3 "" H 7700 4150 50  0001 C CNN
+	1    7700 3950
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
